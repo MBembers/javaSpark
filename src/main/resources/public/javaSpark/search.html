@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search invoices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Invoice search</h1>
+<a href="index.html">Index</a>
+<a href="cars.html">Edit/Update cars</a>
+<a href="admin.html">Generate invoices</a>
+<a href="search.html">Search invoices</a>
+<br/>
+<button id="genrand">generuj losową bazę samopchodów</button>
+<p>
+    Faktura za wszystkie auta: <button id="general_invoice_generator">Generuj fakturę</button> <span id="general_invoice_links"></span>
+</p>
+    <p>Faktura za auta z danego rocznika <select id="year_dropdown">
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+    </select> <button id="year_invoice_generator">Generuj fakturę</button>
+    <span id="year_invoice_link"></span></p>
+    <p>
+        Faktura za auta z danego zakresu cen:
+        <input id="range_invoice_min" type="number" min="5000" max="105000" value="10000"> -
+        <input id="range_invoice_max" type="number" min="5000" max="105000" value="30000">
+        <button id="range_invoice_generator">Generuj</button>
+        <span id="range_invoice_link"></span>
+    </p>
+    <table id="car-list">
+
+    </table>
+<script type="module" src="carListForSearch.js"></script>
+<style>
+    #car-list {
+        width: 100%;
+    }
+    #car-list .kolor {
+        background: var(--c);
+    }
+    img {
+        width: 150px;
+        height: auto;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    tr {
+
+    }
+    td {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+</style>
+</body>
+</html>

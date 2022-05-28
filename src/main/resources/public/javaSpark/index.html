@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samochody</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="index-form">
+    <label for="model">Model: </label>
+    <input type="text" name="model" id="model">
+    <br/>
+    <label for="year">Rok: </label>
+    <select name="year" id="year">
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>
+      <option value="2003">2003</option>
+      <option value="2004">2004</option>
+      <option value="2005">2005</option>
+      <option value="2006">2006</option>
+      <option value="2007">2007</option>
+      <option value="2008">2008</option>
+      <option value="2009">2009</option>
+      <option value="2010">2010</option>
+      <option value="2011">2011</option>
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+    </select><br/>
+    <p>Poduszki powietrzne</p>
+    <ul>
+      <li>Kierowca: <input type="checkbox" name="p_kierowca"></li>
+      <li>Pasażer: <input type="checkbox" name="p_pasazer"></li>
+      <li>Tylna kanapa: <input type="checkbox" name="p_kanapa"></li>
+      <li>Boczne z tyłu: <input type="checkbox" name="p_boczne"></li>
+    </ul>
+    <br/>
+    <label for="color">Kolor: </label>
+    <input type="color" name="color" id="color"><br/>
+    <input type="submit">
+  </form>
+  <br/>
+  <a href="cars.html">strona z danymi</a>
+  <a href="admin.html">generate invoice</a>
+  <a href="search.html">search invoices</a>
+  <br/>
+  <!--<button onclick="randomizeABit()">Dodaj losowo</button>-->
+<script src="index-form.js"></script>
+</body>
+</html>
